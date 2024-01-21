@@ -47,6 +47,9 @@ const GameBoard: FC<GameBoardProps> = ({}) => {
                 case 'ArrowLeft':
                     if (direction != 'RIGHT') setDirection('LEFT');
                     break;
+                case 'Enter':
+                    window.location.reload();
+                    break;
             }
         }
         setCooldown(true);
